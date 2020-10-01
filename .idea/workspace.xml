@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c54afab3-e558-4305-800c-918020f2f677" name="Default Changelist" comment="" />
+    <list default="true" id="c54afab3-e558-4305-800c-918020f2f677" name="Default Changelist" comment="final">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process.js" beforeDir="false" afterPath="$PROJECT_DIR$/process.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +36,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1i3YsEqRVb033kmQJK2dNxgpwca" />
   <component name="ProjectViewState">
@@ -30,13 +54,22 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63343/LAB2_OKR_Petrukhno M.R/index.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/LAB2_OKR_Petrukhno_M.R/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="process.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/process.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.index.html (1)" />
+      <item itemvalue="Node.js.process.js" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="Node.js.process.js" />
       </list>
     </recent_temporary>
   </component>
@@ -49,16 +82,44 @@
       <option name="presentableId" value="Default" />
       <updated>1601137948497</updated>
       <workItem from="1601137950184" duration="44992000" />
+      <workItem from="1601248784450" duration="1841000" />
+      <workItem from="1601333730161" duration="3521000" />
+      <workItem from="1601589248624" duration="1256000" />
     </task>
+    <task id="LOCAL-00001" summary="final">
+      <created>1601338718046</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601338718046</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="204" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601156469716">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state x="204" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601248892026">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
+    <state x="204" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.821@0.23.1440.821" timestamp="1601248892026" />
     <state x="204" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.822@0.23.1440.822" timestamp="1601156469716" />
     <state width="1379" height="248" key="GridCell.Tab.0.bottom" timestamp="1601233920288">
       <screen x="0" y="23" width="1440" height="821" />
@@ -148,6 +209,10 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="241" y="64" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1601156937229" />
+    <state x="340" y="165" key="Vcs.Push.Dialog.v2" timestamp="1601338723449">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="340" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1601338723449" />
     <state x="405" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1601197828161">
       <screen x="0" y="23" width="1440" height="822" />
     </state>

@@ -17,7 +17,6 @@ let textarray=JSON.parse(localStorage.getItem('N')|| '[]')
 function add() {
 
     let child=document.createElement('div')
-    if(array[0]===undefined)child.classList.add("custom","active")
     child.classList.add("custom")
     child.innerHTML=getTime()
     child.id="note"+(array.length+1)
@@ -25,7 +24,7 @@ function add() {
     array.push(child.outerHTML)
 
     parent.appendChild(child)
-    //parent.children.item(0).className="custom active"
+
     let arr=Array.from(parent.childNodes)
 
     for (let i = 0; i <arr.length; i++) {
@@ -33,7 +32,9 @@ function add() {
         arr[i].addEventListener('click',function () {
 
             let current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
+
+            if(current.length===1)if(current[0].className!==undefined)current[0].className = current[0].className.replace(" active", "");
+
             this.className += " active";
 
             let val=arr[i].innerHTML.substring(0,arr[i].innerHTML.indexOf("<"))
@@ -58,7 +59,6 @@ window.onload=function () {
         for(let i=0;i<array.length;i++)
         {
             parent.insertAdjacentHTML('beforeend',array[i])
-            parent.children.item(0).className="custom active"
             if(textarray!==null)
             {
                 parent.childNodes.item(i+1).innerHTML=textarray[i]+"<br>"+getTime()
@@ -66,7 +66,7 @@ window.onload=function () {
             parent.childNodes.item(i+1).addEventListener('click',function () {
                 let val=parent.children.item(i).innerHTML.substring(0,parent.children.item(i).innerHTML.indexOf("<"))
                 const current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
+               if(current.length===1) current[0].className = current[0].className.replace(" active", "");
                 this.className += " active";
 
                 if(parent.childNodes.item(i+1).className==="custom active") {
