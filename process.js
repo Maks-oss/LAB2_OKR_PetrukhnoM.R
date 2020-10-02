@@ -2,6 +2,7 @@
 const parent=document.getElementById('Notes')
 const text=document.getElementById('text')
 parent.removeChild(parent.firstChild)
+
 function getTime() {
     let currentdate = new Date();
     return currentdate.getDate() + "/"
@@ -9,6 +10,12 @@ function getTime() {
         + currentdate.getFullYear() + "  "
         + currentdate.getHours() + ":"
         + currentdate.getMinutes()
+}
+
+function extracted() {
+    const current = document.getElementsByClassName("active");
+    if (current.length === 1) current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
 }
 
 let array = JSON.parse(localStorage.getItem('Note')||'[]')
@@ -24,20 +31,16 @@ function add() {
     array.push(child.outerHTML)
 
     parent.appendChild(child)
+
     let arr=Array.from(parent.childNodes)
 
     for (let i = 0; i <arr.length; i++) {
 
         arr[i].addEventListener('click',function () {
 
-            let current = document.getElementsByClassName("active");
-
-            if(current.length===1)current[0].className = current[0].className.replace(" active", "");
-
-            this.className += " active";
+            extracted(arr,i)
 
             let val=arr[i].innerHTML.substring(0,arr[i].innerHTML.indexOf("<"))
-
 
             if(arr[i].className==="custom active")
             {
@@ -50,6 +53,8 @@ function add() {
     }
     localStorage.setItem('Note',JSON.stringify(array))
 }
+
+
 
 window.onload=function () {
     if(array!==null)
@@ -66,9 +71,7 @@ window.onload=function () {
             parent.childNodes.item(i).addEventListener('click',function () {
                 console.log(parent.childNodes.item(i).id)
                 let val=parent.children.item(i).innerHTML.substring(0,parent.children.item(i).innerHTML.indexOf("<"))
-                const current = document.getElementsByClassName("active");
-                if(current.length===1) current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
+                extracted(Array.from(parent.childNodes),i)
 
                 if(parent.childNodes.item(i).className==="custom active") {
                     textarray[i]=val
@@ -117,14 +120,13 @@ function deleteItem() {
     localStorage.setItem('Note',JSON.stringify(array))
     parent.lastChild.className="custom active"
 }
+
 window.onhashchange=function () {
     let arr=Array.from(parent.childNodes)
     for (let i = 0; i < arr.length; i++) {
         if(location.hash==="#"+arr[i].id)
         {
-            let a=document.getElementsByClassName("custom active")
-            if(a.length===1)a[0].className="custom"
-            arr[i].className="custom active"
+            extracted(arr, i);
             text.value=arr[i].innerHTML.substring(0, arr[i].innerHTML.indexOf("<"))
             break
         }

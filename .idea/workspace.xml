@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c54afab3-e558-4305-800c-918020f2f677" name="Default Changelist" comment="final">
+    <list default="true" id="c54afab3-e558-4305-800c-918020f2f677" name="Default Changelist" comment="bugfix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process.js" beforeDir="false" afterPath="$PROJECT_DIR$/process.js" afterDir="false" />
     </list>
@@ -58,17 +58,21 @@
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/LAB2_OKR_Petrukhno_M.R/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63343/LAB2_OKR_Petrukhno_M.R/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="process.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/process.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.index.html" />
-      <item itemvalue="JavaScript Debug.index.html (1)" />
       <item itemvalue="Node.js.process.js" />
+      <item itemvalue="JavaScript Debug.index.html (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Node.js.process.js" />
       </list>
     </recent_temporary>
@@ -84,7 +88,9 @@
       <workItem from="1601137950184" duration="44992000" />
       <workItem from="1601248784450" duration="1841000" />
       <workItem from="1601333730161" duration="3521000" />
-      <workItem from="1601589248624" duration="1256000" />
+      <workItem from="1601589248624" duration="1286000" />
+      <workItem from="1601592587800" duration="5268000" />
+      <workItem from="1601674700958" duration="1305000" />
     </task>
     <task id="LOCAL-00001" summary="final">
       <created>1601338718046</created>
@@ -93,7 +99,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601338718046</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bugfix">
+      <created>1601590596492</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601590596492</updated>
+    </task>
+    <task id="LOCAL-00003" summary="UPDATE">
+      <created>1601597758644</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601597758644</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,14 +133,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="final" />
-    <option name="LAST_COMMIT_MESSAGE" value="final" />
+    <MESSAGE value="bugfix" />
+    <MESSAGE value="UPDATE" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="204" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601248892026">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="204" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601674859008">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="204" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.821@0.23.1440.821" timestamp="1601248892026" />
-    <state x="204" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.822@0.23.1440.822" timestamp="1601156469716" />
+    <state x="204" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.822@0.23.1440.822" timestamp="1601595475079" />
+    <state x="204" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.823@0.23.1440.823" timestamp="1601674859008" />
     <state width="1379" height="248" key="GridCell.Tab.0.bottom" timestamp="1601233920288">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
@@ -209,9 +232,10 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="241" y="64" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1601156937229" />
-    <state x="340" y="165" key="Vcs.Push.Dialog.v2" timestamp="1601338723449">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state x="340" y="164" key="Vcs.Push.Dialog.v2" timestamp="1601597765532">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
+    <state x="340" y="164" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1601597765532" />
     <state x="340" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1601338723449" />
     <state x="405" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1601197828161">
       <screen x="0" y="23" width="1440" height="822" />
