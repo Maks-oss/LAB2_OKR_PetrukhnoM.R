@@ -12,11 +12,6 @@ function getTime() {
         + currentdate.getMinutes()
 }
 
-function extracted() {
-    const current = document.getElementsByClassName("active");
-    if (current.length === 1) current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-}
 
 let array = JSON.parse(localStorage.getItem('Note')||'[]')
 let textarray=JSON.parse(localStorage.getItem('N')|| '[]')
@@ -27,9 +22,7 @@ function add() {
     child.classList.add("custom")
     child.innerHTML=getTime()
     child.id="note"+(array.length+1)
-
     array.push(child.outerHTML)
-
     parent.appendChild(child)
 
     let arr=Array.from(parent.childNodes)
@@ -38,8 +31,11 @@ function add() {
 
         arr[i].addEventListener('click',function () {
 
-            extracted(arr,i)
+           // extracted(arr,i)
 
+            const current = document.getElementsByClassName("active");
+            if (current.length === 1) current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
             let val=arr[i].innerHTML.substring(0,arr[i].innerHTML.indexOf("<"))
 
             if(arr[i].className==="custom active")
@@ -48,7 +44,8 @@ function add() {
                 textarray[i]=val
                 localStorage.setItem('N',JSON.stringify(textarray))
             }
-
+            location.hash=arr[i].id
+            console.log(trans(location.hash))
         })
     }
     localStorage.setItem('Note',JSON.stringify(array))
@@ -59,7 +56,7 @@ function add() {
 window.onload=function () {
     if(array!==null)
     {
-        console.log(array.length)
+        //console.log(array.length)
         for(let i=0;i<array.length;i++)
         {
             parent.insertAdjacentHTML('beforeend',array[i])
@@ -68,10 +65,25 @@ window.onload=function () {
             {
                 parent.childNodes.item(i).innerHTML=textarray[i]+"<br>"+getTime()
             }
+
+            if(location.hash==="#"+parent.childNodes.item(i).id){
+                const current = document.getElementsByClassName("active");
+                if (current.length === 1) current[0].className = current[0].className.replace(" active", "");
+                parent.childNodes.item(i).className += " active";
+                text.value=parent.childNodes.item(i).innerHTML.substring(0, parent.childNodes.item(i).innerHTML.indexOf("<"))
+            }
+            else if(location.hash===""){
+                const current = document.getElementsByClassName("active");
+                if (current.length === 1) current[0].className = current[0].className.replace(" active", "");
+                text.value=""
+            }
+
             parent.childNodes.item(i).addEventListener('click',function () {
-                console.log(parent.childNodes.item(i).id)
+                location.hash=parent.childNodes.item(i).id
                 let val=parent.children.item(i).innerHTML.substring(0,parent.children.item(i).innerHTML.indexOf("<"))
-                extracted(Array.from(parent.childNodes),i)
+                const current = document.getElementsByClassName("active");
+                if (current.length === 1) current[0].className = current[0].className.replace(" active", "");
+                parent.childNodes.item(i).className += " active";
 
                 if(parent.childNodes.item(i).className==="custom active") {
                     textarray[i]=val
@@ -126,9 +138,18 @@ window.onhashchange=function () {
     for (let i = 0; i < arr.length; i++) {
         if(location.hash==="#"+arr[i].id)
         {
-            extracted(arr, i);
+            const current = document.getElementsByClassName("active");
+            if (current.length === 1) current[0].className = current[0].className.replace(" active", "");
+            arr[i].className="custom active"
             text.value=arr[i].innerHTML.substring(0, arr[i].innerHTML.indexOf("<"))
             break
         }
+
+    }
+    if(location.hash==="")
+    {
+        const current = document.getElementsByClassName("active");
+        if (current.length === 1) current[0].className = current[0].className.replace(" active", "");
+        text.value=""
     }
 }
